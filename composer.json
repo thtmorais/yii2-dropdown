@@ -1,0 +1,21 @@
+{
+    "name": "thtmorais/yii2-dropdown",
+    "description": "Dropdown button - Dynamic change actions for Yii PHP Framework",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","dropdown","drop-lab","DropLab","droplab","dropdown button"," button"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matheus Evangelista Morais",
+            "email": "thtmorais@hotmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "thtmorais\\dropdown\\": "src"
+        }
+    }
+}
