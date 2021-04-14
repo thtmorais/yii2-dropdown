@@ -28,5 +28,35 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \thtmorais\dropdown\Dropdown::widget(); ?>
+<?= Dropdown::widget([
+    'dropdownToggleClass' => 'btn btn-lg btn-success',
+    'main' => [
+        'id' => 'getStartedWithYii',
+        'href' => 'http://www.yiiframework.com/',
+        'class' => 'btn btn-lg btn-success',
+        'text' => 'Get started with Yii'
+    ],
+    'subordinate' => [
+        [
+            'id' => 'yiiDocumentation',
+            'href' => 'http://www.yiiframework.com/doc/',
+            'text' => 'Yii Documentation'
+        ],
+        [
+            'id' => 'yiiForum',
+            'href' => 'http://www.yiiframework.com/forum/',
+            'text' => 'Yii Forum'
+        ],
+        [
+            'id' => 'yiiExtensions',
+            'href' => 'http://www.yiiframework.com/extensions/',
+            'text' => 'Yii Extensions'
+        ]
+    ]
+]) ?>
 ```
+
+Example being executed
+-----
+
+![dropdown](./images/dropdown.gif)
