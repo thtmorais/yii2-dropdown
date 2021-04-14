@@ -59,4 +59,4 @@ Once the extension is installed, simply use it in your code by  :
 Example being executed
 -----
 
-![dropdown](./images/dropdown.gif)
+![dropdown](https://raw.github.com/thtmorais/yii2-dropdown/main/images/dropdown.gif?raw=true)
