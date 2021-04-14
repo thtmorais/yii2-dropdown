@@ -29,10 +29,10 @@ $dropdownMainText = ArrayHelper::getValue($dropdown->main,"text","main");
 
 <?php foreach ($dropdown->subordinate as $subordinateId => $subordinate) {
 
-    $dropdownSubordinateId = ArrayHelper::getValue($subordinate,"id",$subordinateId);
+$dropdownSubordinateId = ArrayHelper::getValue($subordinate,"id",$subordinateId);
 
-    $this->registerJs(
-        <<<JS
+$this->registerJs(
+<<<JS
 
     $('#$dropdownSubordinateId').click(function (){
         let primary = $('#$dropdownMainId');
@@ -51,6 +51,6 @@ $dropdownMainText = ArrayHelper::getValue($dropdown->main,"text","main");
     });
 
 JS
-        ,$this::POS_END);
+,$this::POS_END);
 
 }?>
