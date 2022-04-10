@@ -13,17 +13,17 @@ class Dropdown extends Widget
     /**
      * @var string
      */
-    public string $dropdownToggleClass = 'btn btn-success';
+    public $dropdownToggleClass = 'btn btn-success';
 
     /**
      * @var array
      */
-    public array $main = [];
+    public $main = [];
 
     /**
      * @var array
      */
-    public array $subordinate = [];
+    public $subordinate = [];
 
     /**
      * {@inheritDoc}
