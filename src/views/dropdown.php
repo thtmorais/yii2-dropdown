@@ -23,7 +23,7 @@ $dropdownMainText = ArrayHelper::getValue($dropdown->main,"text","main");
         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
             <?php foreach ($dropdown->subordinate as $subordinateId => $subordinate) : ?>
                 <li>
-                    <a id="<?= ArrayHelper::getValue($subordinate,"id", $subordinateId) ?>" href="<?= ArrayHelper::getValue($subordinate,"href","#$subordinateId") ?>" class="<?= ArrayHelper::getValue($subordinate,"href","$subordinateId") ?>"><?= ArrayHelper::getValue($subordinate,"text", $subordinateId) ?></a>
+                    <a id="<?= ArrayHelper::getValue($subordinate,"id", $subordinateId) ?>" href="<?= ArrayHelper::getValue($subordinate,"href","#$subordinateId") ?>" class="<?= ArrayHelper::getValue($subordinate,"class","$subordinateId") ?>"><?= ArrayHelper::getValue($subordinate,"text", $subordinateId) ?></a>
                 </li>
             <?php endforeach; ?>
         </ul>
