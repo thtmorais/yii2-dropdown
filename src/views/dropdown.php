@@ -15,7 +15,7 @@ $dropdownMainClass = ArrayHelper::getValue($dropdown->main,"class","btn btn-succ
 $dropdownMainText = ArrayHelper::getValue($dropdown->main,"text","main");
 ?>
 
-    <div id="<?= $dropdownOptionsId ?>" class="<?= "btn-group" . $dropdownOptionsClass ? (" " . $dropdownOptionsClass) : "" ?>">
+    <div id="<?= $dropdownOptionsId ?>" class="<?= $dropdownOptionsClass ? ("btn-group " . $dropdownOptionsClass) : "btn-group" ?>">
         <a id="<?= $dropdownMainId ?>" href="<?= $dropdownMainHref ?>" class="<?= $dropdownMainClass ?>"><?= $dropdownMainText ?></a>
         <button class="<?= $dropdown->dropdownToggleClass ?> dropdown-toggle" data-toggle="dropdown">
             <span class="caret"></span>
