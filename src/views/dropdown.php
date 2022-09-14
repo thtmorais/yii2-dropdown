@@ -6,6 +6,8 @@ use yii\helpers\ArrayHelper;
 /* @var $dropdown \thtmorais\dropdown\Dropdown */
 
 $dropdown = $this->context;
+$dropdownOptionsId = ArrayHelper::getValue($dropdown->options,"id", "dropdown-group");
+$dropdownOptionsClass = ArrayHelper::getValue($dropdown->options,"class");
 
 $dropdownMainId = ArrayHelper::getValue($dropdown->main,"id","main");
 $dropdownMainHref = ArrayHelper::getValue($dropdown->main,"href","#");
@@ -13,7 +15,7 @@ $dropdownMainClass = ArrayHelper::getValue($dropdown->main,"class","btn btn-succ
 $dropdownMainText = ArrayHelper::getValue($dropdown->main,"text","main");
 ?>
 
-    <div class="btn-group">
+    <div id="<?= $dropdownOptionsId ?>" class="<?= $dropdownOptionsClass ? ("btn-group " . $dropdownOptionsClass) : "btn-group" ?>">
         <a id="<?= $dropdownMainId ?>" href="<?= $dropdownMainHref ?>" class="<?= $dropdownMainClass ?>"><?= $dropdownMainText ?></a>
         <button class="<?= $dropdown->dropdownToggleClass ?> dropdown-toggle" data-toggle="dropdown">
             <span class="caret"></span>

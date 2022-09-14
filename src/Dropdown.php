@@ -26,6 +26,11 @@ class Dropdown extends Widget
     public $subordinate = [];
 
     /**
+     * @var array
+     */
+    public $options = [];
+
+    /**
      * {@inheritDoc}
      */
     public function run()
