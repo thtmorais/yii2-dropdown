@@ -52,6 +52,10 @@ Once the extension is installed, simply use it in your code by  :
             'href' => 'http://www.yiiframework.com/extensions/',
             'text' => 'Yii Extensions'
         ]
+    ],
+    'options' => [
+        'id' => 'group-dropdown',
+        'class' => 'p-1'
     ]
 ]) ?>
 ```
